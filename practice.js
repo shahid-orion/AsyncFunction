@@ -1,4 +1,4 @@
-const fakeRequestCallback = (url, success, failure) => {
+const newRequestCallback = (url, success, failure) => {
 	const delay = Math.floor(Math.random() * 4500) + 500;
 	setTimeout(() => {
 		if (delay > 4000) {
@@ -9,7 +9,7 @@ const fakeRequestCallback = (url, success, failure) => {
 	}, delay);
 };
 
-fakeRequestCallback(
+newRequestCallback(
 	"google.com",
 	() => {
 		console.log("it worked!!!");
